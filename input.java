@@ -9,7 +9,7 @@ public class input {
 		String s = sc.nextLine();
 		System.out.println("Enter School Name: ");
 		String s1 = sc.nextLine();
-		System.out.println("Enter the Gender");
+		System.out.println("Enter the Gender :");
 		char a = sc.next().charAt(0);
 		int [] arr = new int[5];
 		int add =0;
