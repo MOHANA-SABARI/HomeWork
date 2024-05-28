@@ -1,6 +1,20 @@
 package HomeWork;
 import java.util.*;
 public class input {
+	
+	static int sum(int [] arr,int add) {
+		for(int i:arr) {
+			add+=i;
+		}
+		return add;
+	}
+	
+	static float tot(int [] arr,int add) {
+		for(int i:arr) {
+			add+=i;
+		}
+		return add/5;
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -17,14 +31,14 @@ public class input {
 		for(int i=0;i<5;i++) {
 			System.out.println("Enter Your "+aa[i]+" Mark:");
 			arr[i]=sc.nextInt();
-			add+=arr[i];
 		}
 		
-		float total = add/5;
 		
-		System.out.println("Total mark :"+ add);
+		System.out.println("Total mark :"+ sum(arr,add));
 		
-		System.out.println("Average:"+ total);
+		float total = add;
+		
+		System.out.println("Average:"+ tot(arr,add));
 	}
 
 }
